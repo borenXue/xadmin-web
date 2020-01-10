@@ -1,24 +1,41 @@
 # xadmin-web
 
-## Project setup
-```
+### 本地快速启动
+
+```bash
+# 安装依赖
 npm install
+
+# 本地启动
+npm start
+
+# 构建测试环境
+npm run build:test
+# 构建线上环境
+npm run build:online
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### vue-cli configuration
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+* Babel && TypeScript && Router && Vuex && node-sass
+* ESLint + Airbnb config && Lint on save && Lint and fix on commit
+* Use class-style component syntax
+* Use Babel alongside TypeScript
+* Use history mode for router
+* In dedicated config files
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### TODO
+
+* 测试环境发布脚本 - 发布至阿里云 OSS 网站托管
+* 功能细节测试
+* 组件开发与优化
+  * 开发 - 多行省略文本组件 - 仅超出时 tooltip 提示 && 支持自定义省略文案与样式(...)
+  * 开发 - icon 组件: svg、图片、icon-symbol 支持
+  * 优化 - SidebarController 组件支持初次设置时, 不展示动效
+* 完善第三方库的 typescript 定义
+  * segment-js
+* axios 强依赖 0.18.1 版本, 寻找替代方案
+* welcome 页面内部元素支持

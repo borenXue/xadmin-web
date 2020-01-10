@@ -1,0 +1,89 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #f2f2f2;
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+
+/**
+ * element-ui 组件默认样式修改
+ */
+
+.xadmin-ele-loading.el-loading-mask.is-fullscreen {
+  // background-color: rgba(8, 8, 8, 0.4) !important;
+  .el-loading-spinner {
+    margin-top: -55px;
+  }
+  .el-loading-text {
+    font-size: 16px;
+    color: #027dfd;
+    margin-top: 10px;
+  }
+  i.el-icon-loading {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(30, 141, 255);
+  }
+}
+
+.layout-main > .el-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  & > .el-header {
+    padding: 0;
+    height: auto !important;
+    
+    margin-top: -20px;
+
+    & > * {
+      display: inline-block;
+      margin-right: 15px;
+      margin-left: 0px;
+      margin-top: 10px;
+      &:last-child {
+        margin-left: 0;
+      }
+      &:first-child {
+        margin-top: 20px;
+      }
+      &.el-switch {
+        vertical-align: initial;
+      }
+    }
+  }
+
+  & > .el-main {
+    padding-left: 0;
+    padding-right: 0;
+
+    .el-table__fixed-right,
+    .el-table__fixed-left {
+      transition: 200ms linear height;
+    }
+  }
+
+  & > .el-footer {
+    padding: 0;
+    height: auth;
+  }
+}
