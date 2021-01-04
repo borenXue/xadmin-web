@@ -1,5 +1,19 @@
 # xadmin-web
 
+<br/><br/>
+
+### 简介
+
+* 技术栈 - vue2、element-ui、typescript
+* 代码存储 - [GitHub](https://github.com/xbr-overview/xadmin-web)
+* CI自动化 - [阿里云效](https://flow.aliyun.com/pipelines/1214642/history)
+* OSS 地址 - [阿里云OSS](https://oss.console.aliyun.com/bucket/oss-cn-hangzhou/xadmin-test/overview)
+* 体验地址 - [xadmin.xueboren.cn](http://xadmin.xueboren.cn/)
+
+
+
+<br/><br/>
+
 ### 本地快速启动
 
 ```bash
