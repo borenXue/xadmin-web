@@ -26,7 +26,6 @@ interface StateRouterModule {
  */
 export function generateRouterListByRightList(rightList: AuthRightItem[], level: number = 1): MyRouteConfig[] {
   const routeList:MyRouteConfig[] = [];
-  debugger;
   for (const right of rightList) {
     if (!right.children) right.children = [];
     let component = authRouteList[right.code];
